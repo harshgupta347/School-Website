@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Modern School</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+
+<body>
+    <!--  --------Navbar-------  -->
+    <section id="navbar">
+        <nav>
+            <img src="images\school logo.png">
+            <div class="navigation">
+                <ul>
+
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="teacher.html">Teachers</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+
+    <!-- Contact Content -->
+    <section id="Contact-content">
+        <div class="jumbotron">
+            <h1 class="display-4">Contact Us!</h1>
+            <p class="lead">Feel free to contact for any queries. You can also drop any comments or suggestions if you
+                want.</p>
+            <hr class="my-4">
+            <form class="con">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="full_name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Phone Number</label>
+                        <input type="phone" class="form-control" id="inputNum">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Message</label>
+                        <input type="text" class="form-control" id="inputMessage">
+                    </div>
+                </div>
+
+            </form>
+            <a class="btn btn-primary btn-lg" role="button" onclick="second()">Send</a>
+        </div>
+    </section>
+
+    <script language="javascript" type="text/javascript">
+        function second() {
+            let nameContent = document.getElementById('full_name').value;
+            y = nameContent + " thanks for contacting us..!";
+            alert(y);
+        }
+    </script>
+
+
+    <!-- ---------footer------- -->
+    <footer id="foot">
+        <div class="foot">
+            <img src="images\school logo.png" width="70" height="68" alt="">
+            <div><b>THE MODERN SCHOOL</b></div>
+            <hr>
+        </div>
+        <div class="foote">
+            <div class=" half-page">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="index.html">Home</a></li>
+                    <li class="list-group-item"><a href="teacher.html">Teachers</a></li>
+                    <li class="list-group-item"><a href="event.html">Events</a></li>
+                    <li class="list-group-item"><a href="admission.html">Admissions</a></li>
+                    <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="half-page">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">
+                        <i class="fas foot-social fa-envelope"></i> Mail
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fab foot-social fa-twitter"></i> Twitter
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fab foot-social fa-whatsapp-square"></i> Whatsapp
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fab foot-social fa-instagram"></i> Instagram
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fab foot-social fa-facebook"></i> Facebook
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h6>© Harsh Gupta 2022</h6>
+        </div>
+    </footer>
+</body>
+
+</html>
